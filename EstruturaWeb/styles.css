@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+}
+#topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#logo > a,
+li > a {
+  color: white;
+}
+#topBar > h1 > a:hover {
+  text-decoration: none;
+}
+.languageSelection {
+  display: flex;
+  flex-direction: row;
+}
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: gold;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.navMenu > a {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+/*Aqui o principal*/
+#infoHomepage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+h2 {
+  font-size: xx-large;
+}
+p {
+  text-align: center;
+  font-size: larger;
+  width: 70%;
+}
+/*Aqui o footer*/
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 50px;
+
+  position: absolute;
+  width: 100%;
+}
+.footernav {
+  color: white;
+  font-size: larger;
+}

@@ -61,8 +61,17 @@ p {
 }
 /*Aqui o footer*/
 body {
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
   min-height: 100%;
+  background-color: black;
+}
+.content {
+  background-color: white;
+}
+#fotomain {
+  width: max-content;
 }
 
 footer {
@@ -75,12 +84,25 @@ footer {
   box-sizing: border-box;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
   height: 50px;
-
-  position: absolute;
+  max-width: 1000px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 .footernav {
   color: white;
   font-size: larger;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.infoFooter {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  justify-content: space-between;
+}
+.svg {
+  margin-right: 5px;
 }

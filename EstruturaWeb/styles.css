@@ -80,39 +80,6 @@ body {
   width: max-content;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  padding-top: 15px;
-  height: 50px;
-  max-width: 1000px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-.footernav {
-  color: white;
-  font-size: larger;
-  font-weight: bold;
-  font-family: 'Poppins';
-}
-.infoFooter {
-  display: flex;
-  align-items: center;
-  justify-items: flex-start;
-  justify-content: space-between;
-}
-.svg {
-  margin-right: 5px;
-}
 .productsTable {
   padding-top: 2%;
   padding-bottom: 10%;
@@ -156,4 +123,38 @@ footer {
 .divUbi {
   text-align: center;
   font-family: 'Poppins';
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  height: 50px;
+  max-width: 1000px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.footernav {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+.infoFooter {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  justify-content: space-between;
+}
+.svg {
+  margin-right: 5px;
 }

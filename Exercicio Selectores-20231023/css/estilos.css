@@ -1,0 +1,54 @@
+/* Centra na páxina o texto do título */
+h1 {
+  text-align: center;
+}
+
+/* Da a todas as imaxes o mesmo tamaño 50x50px */
+img {
+  width: 50px;
+  height: 50px;
+}
+/*Empregando clases e unha regra de selección fai que todas as celas con texto da primeira columna
+teñan fondo vermello e letra blanca*/
+
+.firstColumn {
+  color: white;
+  background-color: red;
+}
+/* Engadindo só un id á fila da cela onde pon "Capacidade" e dando clase ás celas con "XB" 
+cambiar o tamaño da letra centrar o texto e poñer o fondo gris */
+
+#capacity > td {
+  font-size: larger;
+  text-align: center;
+  background-color: gray;
+}
+
+/* Engadindo só un id á fila que as contén engade estilos aos elementos da lista que están dentro de
+esa fila para poñerlles cor de texto vermello*/
+#colour > td > ul {
+  color: red;
+}
+/*Empregando un id aumenta o padding superior e inferior á cela na que pon "5 horas" e dalle fondo amarelo*/
+
+#five {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: yellow;
+}
+
+/* Dar os estilos axeitados para poñer un borde simple colapsado e centrar a táboa */
+table,
+table th,
+table td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dar cor de fondo azul a todas as celas que ten colspan="2" ou colspan="3"*/
+[colspan='2'],
+[colspan='3'] {
+  background-color: blue;
+}

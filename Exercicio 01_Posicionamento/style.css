@@ -1,11 +1,20 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #main {
   background-color: rgb(81, 209, 81);
+  margin: 100px auto;
+  height: 800px;
+  width: 80%;
 }
 body {
   background-color: rgb(167, 163, 163);
 }
 nav {
   background-color: rgb(121, 118, 118);
+  position: sticky;
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -33,10 +42,53 @@ figure {
   border-radius: 6%;
   width: 25%;
 }
-#sidebar.fixed {
+
+#fig1 {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 11;
+}
+
+#fig2 {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 10;
+}
+#fig3 {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  z-index: 9;
+}
+#fig4 {
+  position: absolute;
+  left: 60%;
+  top: 35%;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(20deg);
+  z-index: 8;
+}
+#sidebar {
   position: fixed;
   bottom: 50%;
-  left: 50%;
-  width: 300px;
-  border: 3px solid #73ad21;
+  left: 1;
+  width: 90px;
+  border: 3px solid rgb(88, 86, 86);
+  height: 40%;
+  top: 30%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
 }

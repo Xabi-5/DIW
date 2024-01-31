@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+      }
+      a {
+        margin: 10px;
+      }
+      main {
+        margin-left: 10px;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #botons {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-primary text-white">
+      <a href="" class="btn btn-white text-white border-white text-center"
+        >&lt;</a
+      >
+      Máis información
+    </header>
+
+    <main>
+      <h1>Título</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio
+        facere alias iure placeat quasi dolore debitis laboriosam assumenda
+        asperiores, illo harum corporis sunt eaque quaerat, quas eveniet?
+        Dignissimos, sed?
+      </p>
+      <img src="BootStrap5.png" alt="" style="width: 15rem" />
+
+      <div id="botons">
+        <a href="" class="btn btn-secondary">&lt;Volver</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Accións
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="" class="dropdown-item">Gardar favorito</a></li>
+            <li><a href="" class="dropdown-item">Exportar a pdf</a></li>
+            <li><a href="" class="dropdown-item">Imprimir</a></li>
+            <li><a href="" class="dropdown-item">Compartir</a></li>
+          </ul>
+          <div
+            class="dropdown-menu"
+            aria-labelledby="dropwdownMenuButton"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-secondary text-white p-2">
+      <p class="text-center m-1">Pé de páxina</p>
+    </footer>
+  </body>
+</html>

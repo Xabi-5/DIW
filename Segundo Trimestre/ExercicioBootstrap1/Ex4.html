@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <form action="">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="nome">Nome completo</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nome"
+          aria-label="Nome"
+          aria-describedby="nome"
+        />
+        <input type="text" class="form-control" placeholder="Apelidos" />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="correo">@</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Correo electrónico"
+            aria-label="Correo"
+            aria-describedby="correo"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label for="cp">Código postal</label>
+          <input type="text" class="form-control" id="cp" placeholder="CP" />
+        </div>
+        <div class="col-4">
+          <label for="cp">Cidade</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cp"
+            placeholder="Cidade"
+          />
+        </div>
+        <div class="col-4">
+          <label for="provinciaSelect">Provincia</label>
+          <select
+            id="provinciaSelect"
+            class="custom-select"
+            aria-placeholder="Provincia"
+          >
+            <option value="" hidden>Escolle unha...</option>
+            <option value="">A Coruña</option>
+            <option value="">Lugo</option>
+            <option value="">Ourense</option>
+            <option value="">Pontevedra</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="comentarios">Comentarios</label>
+        <textarea
+          type="text"
+          class="form-control"
+          placeholder="comentarios"
+        ></textarea>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="primeira" />
+        <label for="primeira" class="form-check-label text-success mr-5"
+          >Primeira Opción</label
+        >
+        <input type="checkbox" class="form-check-input" id="segunda" />
+        <label for="segunda" class="form-check-label text-success mr-5"
+          >Segunda Opción</label
+        >
+        <input type="checkbox" class="form-check-input" id="terceira" />
+        <label for="terceira" class="form-check-label text-success mr-5"
+          >Terceira Opción</label
+        >
+      </div>
+      <div>
+        <label for="optionSelect">selecciona un elemento da lista</label>
+        <select id="optionSelect" class="custom-select">
+          <option value="">Opción 1</option>
+          <option value="">Opción 2</option>
+          <option value="">Opción 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select multiple class="form-control">
+          <option value="">seleccion multiple</option>
+          <option value="">Opción 1</option>
+          <option value="">Opción 2</option>
+          <option value="">Opción 3</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+    </form>
+  </body>
+</html>

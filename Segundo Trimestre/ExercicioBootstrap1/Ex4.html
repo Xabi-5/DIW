@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
   </head>
@@ -17,9 +17,9 @@
     }
   </style>
   <body>
-    <form action="">
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="nome">Nome completo</span>
+    <form action="" class="container-fluid">
+      <div class="input-group mb-1 mt-3">
+        <label class="input-group-text" id="nome">Nome completo</label>
         <input
           type="text"
           class="form-control"
@@ -30,16 +30,14 @@
         <input type="text" class="form-control" placeholder="Apelidos" />
       </div>
       <div class="input-group mb-3">
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="correo">@</span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Correo electrónico"
-            aria-label="Correo"
-            aria-describedby="correo"
-          />
-        </div>
+        <label class="input-group-text" id="correo">@</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Correo electrónico"
+          aria-label="Correo"
+          aria-describedby="correo"
+        />
       </div>
       <div class="row">
         <div class="col-4">
@@ -59,7 +57,7 @@
           <label for="provinciaSelect">Provincia</label>
           <select
             id="provinciaSelect"
-            class="custom-select"
+            class="form-select"
             aria-placeholder="Provincia"
           >
             <option value="" hidden>Escolle unha...</option>
@@ -83,10 +81,14 @@
         <label for="primeira" class="form-check-label text-success mr-5"
           >Primeira Opción</label
         >
+      </div>
+      <div class="form-check form-check-inline">
         <input type="checkbox" class="form-check-input" id="segunda" />
         <label for="segunda" class="form-check-label text-success mr-5"
           >Segunda Opción</label
         >
+      </div>
+      <div class="form-check form-check-inline">
         <input type="checkbox" class="form-check-input" id="terceira" />
         <label for="terceira" class="form-check-label text-success mr-5"
           >Terceira Opción</label
@@ -94,7 +96,7 @@
       </div>
       <div>
         <label for="optionSelect">selecciona un elemento da lista</label>
-        <select id="optionSelect" class="custom-select">
+        <select id="optionSelect" class="form-select">
           <option value="">Opción 1</option>
           <option value="">Opción 2</option>
           <option value="">Opción 3</option>

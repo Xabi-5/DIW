@@ -1,0 +1,111 @@
+<!--
+     Descripción: Compoñente Carrousel en BootStrap .
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Compoñente Carrusel en BootStrap</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" ref="styles.css" />
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <!--probar .carousel-dark , desactivar touch, poñer intervalos,...-->
+        <div id="MyCarouselId" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!--d-block : Amosa o elemento en forma de bloque, ocupando todo o ancho dispoñible e sen permitir outros elementos polos lados.
+               .w-100 podemos forzar o cambio de fila cando nos queiramos:-->
+              <img class="d-block w-100" src="img/img01.jpg" alt="Primeiro elemento" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Serea</h5>
+                <p>
+                  Sita na cidade de Copenague.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/img02.jpg" alt="Segundo elemento" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cacharro</h5>
+                <p>
+                  Lugar descoñecido.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/img03.jpg" alt="Terceiro elemento" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Estatua de Don Quijote e Sancho Panza</h5>
+                <p>
+                  Sita na cidade de Bruselas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--controis con etiquetas a e link con href-->
+          <!--
+          <a class="carousel-control-prev" href="#MyCarouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#MyCarouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Seguinte</span>
+          </a>
+          -->
+
+          <!--controis con botons link e con data-bs-target. Na documentacion recomenda facelo con botóns-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#MyCarouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#MyCarouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Seguinte</span>
+          </button>
+          <!--Indicadores cunha lista -->
+          <!--
+          <ol class="carousel-indicators">
+            <li data-bs-target="#MyCarouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#MyCarouselId" data-bs-slide-to="1"></li>
+            <li data-bs-target="#MyCarouselId" data-bs-slide-to="2"></li>
+          </ol>
+          -->
+          <!--Indicadores utilizando botóns-->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#MyCarouselId" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#MyCarouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#MyCarouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

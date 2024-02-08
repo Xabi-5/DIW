@@ -1,0 +1,150 @@
+<!--
+     Descripción: Compoñente Modal
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Compoñente Modal</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" ref="styles.css" />
+</head>
+
+<body>
+  <div class="row-cols-auto">
+    <div class="modal  fade" id="exemploModal">
+      <!--probar modal-* (sm,lg.xl) tamaño da ventá. e probar tamen a aliñacion vertical con modal-dialog-centered
+      Probar modal-fullscreen coas súas variantes modal-fullscreen-x-down-->
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h5 class="modal-title">Título</h5>
+            <button type="button" class="close" data-bs-dismiss="modal">
+              <span aria-hidden="true">X</span>
+            </button>
+
+          </div>
+          <div class="modal-body">
+            Contido da ventá modal
+          </div>
+          <div class="modal-footer">
+            <div class="btn btn-primary" data-bs-dismiss="modal">
+              Pechar
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SEMPRE NECESITAMOS UN BOTON QUE LANCE A VENTÁ MODAL-->
+
+    <div class="btn btn-info m-5" data-bs-toggle="modal" data-bs-target="#exemploModal">
+      Amosar a ventá modal
+    </div>
+
+    <!-- Button trigger modal: cando o fondo se establece en static, o modal non se cerra ao facer click fora del.
+data-bs-backdrop="static" e data-bs-keyboard(por defecto esta a false)(se o poñemos true poderiamos pechala con Esc) -->
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Lanzar modal de fondo estático
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Título do modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            mensaxe do body modal
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Pechar</button>
+            <button type="button" class="btn btn-primary">Comprendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row-cols-auto">
+    <!--Exemplo da paxina de bootstrap. CONTIDO MODAL VARIABLE. CANDO VARIOS BOTONS ACTIVAN A MESMA VENTÁ MODAL CON CONTIDOS LIXEIRAMENTE DIFERENTE-->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@admin">Open modal for @admin</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@info">Open modal for @info</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@secretaria">Open modal for @secretaria</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nova mensaxe</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-2">
+                <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-2">
+                <label for="message-text" class="col-form-label">Mensaxe:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Pechar</button>
+            <button type="button" class="btn btn-primary">Enviar mensaxe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!--Script para que dependendo de que botón lance a ventá modal poña un @xxx ou outro.
+Basicamente o que fai e capturar todos os elementos con id exempleModal(a nosa ventá modal)
+e pasalle o atributo data-bs-whatever que o pon no titulo do modal e no input  do body-->
+  <script>
+    var exampleModal = document.getElementById('exampleModal')
+    exampleModal.addEventListener('show.bs.modal', function (event) {
+      // Botón que activou o modal
+      var button = event.relatedTarget
+      // Extraer información de los atributos data-bs-*
+      var recipient = button.getAttribute('data-bs-whatever')
+      // Si é necesario, podes iniciar unha solicitude AJAX aquí
+      // e logo realiza a actualización nunha devolución de chamada.
+      //
+      // Actualizar o contido do modal.
+      var modalTitle = exampleModal.querySelector('.modal-title')
+      var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+      modalTitle.textContent = 'Nova menxaxe para ' + recipient
+      modalBodyInput.value = recipient
+    })
+  </script>
+
+</body>
+
+</html>

@@ -70,6 +70,7 @@
       </div>
       <div class="rightHeader">
         <button type="button" class="btn btn-primary">Identifíquese</button>
+        <!-- isto chamase modal  -->
         <button type="button" class="btn btn-primary">Rexistro</button>
       </div>
     </header>
@@ -148,7 +149,12 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-5 d-flex d-space-between">
           <div class="col text-center">
-            <div class="card h-100">
+            <div
+              class="card h-100"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Apúntate, o primeiro mes é gratis"
+            >
               <img src="Bootstrap5_logo.png" alt="" class="card-img" />
               <div class="card-body">
                 <h4 class="card-title">Curso bootstrap 5</h4>
@@ -161,7 +167,12 @@
             </div>
           </div>
           <div class="col text-center">
-            <div class="card h-100">
+            <div
+              class="card h-100"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Apúntate, o primeiro mes é gratis"
+            >
               <img src="mysql.png" alt="" class="card-img" />
               <div class="card-body">
                 <h4 class="card-title">Curso MySQL</h4>
@@ -174,7 +185,12 @@
             </div>
           </div>
           <div class="col text-center">
-            <div class="card h-100">
+            <div
+              class="card h-100"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Apúntate, o primeiro mes é gratis"
+            >
               <img src="gimp.png" alt="" class="card-img" />
               <div class="card-body">
                 <h4 class="card-title">Curso bootstrap 5</h4>
@@ -188,6 +204,81 @@
           </div>
         </div>
       </div>
+      <div class="bg-black">
+        <h1 class="text-white text-center">¿Queres Falar Con Nós?</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a
+              href=""
+              class="list-group-item list-group-item-action active"
+              data-bs-toggle="list"
+              role="tab"
+              >Contactar</a
+            >
+            <a
+              href=""
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              role="tab"
+              >Suxerencia</a
+            >
+            <a
+              href=""
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              role="tab"
+              >Empresas</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">Email:</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Introduce o teu correo"
+              id="correo"
+            />
+          </div>
+          <label for="problema" class="form-label">O teu problema:</label>
+          <div class="input-group">
+            <textarea
+              class="form-control"
+              id="problema"
+              cols="15"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      Aviso de Cookies: ¿Enterácheste?
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <footer class="bg-black">
+      <p class="text-white text-center">
+        @IES San Clemente.net Todos os dereitos reservados
+      </p>
+    </footer>
   </body>
+  <script defer>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
 </html>

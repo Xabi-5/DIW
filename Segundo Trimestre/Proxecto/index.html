@@ -1,284 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <header class="p-1 bg-black d-flex flex-row justify-content-between">
-      <div>
-        <nav class="d-flex flex-row">
-          <a href=""> <img src="logo.png" alt="" style="width: 30px" /></a>
-          <a href="" class="btn text-white">Inicio</a>
-          <div class="dropdown">
-            <a
-              class="btn text-white dropdown-toggle --bs-btn-active-border"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Novas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Últimas novas</a></li>
-              <li><a class="dropdown-item" href="#">Novas destacadas</a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a
-              class="btn text-white dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Nós
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">A empresa</a></li>
-              <li><a class="dropdown-item" href="#">Traballa con nós</a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a
-              class="btn text-white dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Contacto
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Onde estamos?</a></li>
-              <li><a class="dropdown-item" href="#">Servizo ao cliente</a></li>
-            </ul>
-          </div>
-        </nav>
-        <!--https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ -->
-      </div>
-      <div class="rightHeader">
-        <button type="button" class="btn btn-primary">Identifíquese</button>
-        <!-- isto chamase modal  -->
-        <button type="button" class="btn btn-primary">Rexistro</button>
-      </div>
-    </header>
-    <main class="d-flex justify-content-center flex-column">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide container"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
 
-        <div class="carousel-inner slide">
-          <div class="carousel-item active">
-            <img src="c1.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="c2.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="c3.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="c4.jpg" class="d-block w-100" alt="..." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="p-1 bg-dark d-flex flex-row justify-content-between">
+    <div>
+      <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="" style="width: 30px" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown" data-bs-theme="light">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Novas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Últimas Novas</a></li>
+                  <li><a class="dropdown-item" href="#">Novas Destacadas</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" data-bs-theme="light">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Nós
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">A Empresa</a></li>
+                  <li><a class="dropdown-item" href="#">Traballa con nós</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" data-bs-theme="light">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Contacto
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Onde estamos?</a></li>
+                  <li><a class="dropdown-item" href="#">Servizo ao cliente</a></li>
+                </ul>
+              </li>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </nav>
+    </div>
+    <div class="p-0 m-0">
 
-      <div class="bg-black">
-        <h1 class="text-white text-center">Cursos Ofertados</h1>
-      </div>
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-5 d-flex d-space-between">
-          <div class="col text-center">
-            <div
-              class="card h-100"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Apúntate, o primeiro mes é gratis"
-            >
-              <img src="Bootstrap5_logo.png" alt="" class="card-img" />
-              <div class="card-body">
-                <h4 class="card-title">Curso bootstrap 5</h4>
-                <h6 class="card-subtitle">Fai a túa web de maneira sinxela</h6>
-                <p class="card-text">
-                  Aprenderás como deseñar sitios web co framework de deseño
-                  responsivo máis utilizado e importante do mundo.
-                </p>
-              </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Identifíquese
+      </button>
+
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white" data-bs-theme="dark">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Entra en sesión</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-          </div>
-          <div class="col text-center">
-            <div
-              class="card h-100"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Apúntate, o primeiro mes é gratis"
-            >
-              <img src="mysql.png" alt="" class="card-img" />
-              <div class="card-body">
-                <h4 class="card-title">Curso MySQL</h4>
-                <h6 class="card-subtitle">Toda a potencia de SQL</h6>
-                <p class="card-text">
-                  MySQL pon a potencia das bases de datos relacionais ao teu
-                  alcance.
-                </p>
+            <div class="modal-body">
+              <label for="correoID" class="form-label mb-0 mt-2">Email:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Introduce o teu email" id="correoID" />
               </div>
+              <label for="contrasinalID" class="form-label mb-0 mt-2">Contrasinal:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Introduce a túa contrasinal" id="contrasinalID" />
+              </div>
+
             </div>
-          </div>
-          <div class="col text-center">
-            <div
-              class="card h-100"
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Apúntate, o primeiro mes é gratis"
-            >
-              <img src="gimp.png" alt="" class="card-img" />
-              <div class="card-body">
-                <h4 class="card-title">Curso bootstrap 5</h4>
-                <h6 class="card-subtitle">Fai a túa web de maneira sinxela</h6>
-                <p class="card-text">
-                  Aprenderás como deseñar sitios web co framework de deseño
-                  responsivo máis utilizado e importante do mundo
-                </p>
-              </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-primary">Entrar</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg-black">
-        <h1 class="text-white text-center">¿Queres Falar Con Nós?</h1>
-      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+        Rexistro
+      </button>
 
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a
-              href=""
-              class="list-group-item list-group-item-action active"
-              data-bs-toggle="list"
-              role="tab"
-              >Contactar</a
-            >
-            <a
-              href=""
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              role="tab"
-              >Suxerencia</a
-            >
-            <a
-              href=""
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              role="tab"
-              >Empresas</a
-            >
+      <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white" data-bs-theme="dark">
+              <h1 class="modal-title fs-5" id="registerModalLabel">Rexistro de usuario</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="nomeReg" class="form-label mb-0 mt-2">Email:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Introduce o teu nome" id="nomeReg" />
+              </div>
+              <label for="apelidosReg" class="form-label mb-0 mt-2">Apelidos:</label>
+              <div class="input-group">
+                <input type="text" class="form-control mb-0 mt-2" placeholder="Introduce os teus apelidos"
+                  id="apelidosReg" />
+              </div>
+              <label for="correoReg" class="form-label mb-0 mt-2">Email:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Introduce o teu correo electrónico"
+                  id="correoReg" />
+              </div>
+              <label for="contrasinalReg" class="form-label mb-0 mt-2">Contrasinal:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Introduce a túa contrasinal" id="contrasinalReg" />
+              </div>
+              <div class="d-flex align-items-center justify-content-start mt-2">
+                <p class="align-text-center text-center m-0 p-0">Rol</p>
+
+
+                <input type="radio" class="btn-check ml-1" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Estudante</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Docente</label>
+
+
+
+              </div>
+
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-primary">Rexistrar</button>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <label for="email" class="form-label">Email:</label>
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Introduce o teu correo"
-              id="correo"
-            />
-          </div>
-          <label for="problema" class="form-label">O teu problema:</label>
-          <div class="input-group">
-            <textarea
-              class="form-control"
-              id="problema"
-              cols="15"
-              rows="5"
-            ></textarea>
-          </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="d-flex justify-content-center flex-column">
+    <div id="carouselExampleIndicators" class="carousel slide container mt-2 mb-3" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner slide">
+        <div class="carousel-item active">
+          <img src="c1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="c2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="c3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="c4.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
-    </main>
-
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      Aviso de Cookies: ¿Enterácheste?
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="alert"
-        aria-label="Close"
-      ></button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <footer class="bg-black">
-      <p class="text-white text-center">
-        @IES San Clemente.net Todos os dereitos reservados
-      </p>
-    </footer>
-  </body>
-  <script defer>
-    var tooltipTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    );
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-  </script>
+    <div class="bg-dark">
+      <h1 class="text-white text-center">Cursos Ofertados</h1>
+    </div>
+    <div class="container mt-2 mb-2">
+      <div class="row row-cols-1 row-cols-md-3 m-0 g-5 d-flex d-space-between">
+        <div class="col text-center">
+          <div class="card h-100" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Apúntate, o primeiro mes é gratis">
+            <img src="Bootstrap5_logo.png" alt="" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">Curso bootstrap 5</h4>
+              <h6 class="card-subtitle">
+                Fai a túa web de maneira sinxela
+              </h6>
+              <p class="card-text">
+                Aprenderás como deseñar sitios web co
+                framework de deseño responsivo máis
+                utilizado e importante do mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="card h-100" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Apúntate, o primeiro mes é gratis">
+            <img src="mysql.png" alt="" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">Curso MySQL</h4>
+              <h6 class="card-subtitle">
+                Toda a potencia de SQL
+              </h6>
+              <p class="card-text">
+                MySQL pon a potencia das bases de datos
+                relacionais ao teu alcance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="card h-100" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Apúntate, o primeiro mes é gratis">
+            <img src="gimp.png" alt="" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">Curso bootstrap 5</h4>
+              <h6 class="card-subtitle">
+                Fai a túa web de maneira sinxela
+              </h6>
+              <p class="card-text">
+                Aprenderás como deseñar sitios web co
+                framework de deseño responsivo máis
+                utilizado e importante do mundo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark">
+      <h1 class="text-white text-center">¿Queres Falar Con Nós?</h1>
+    </div>
+
+    <div class="row mt-3 m-0">
+      <div class="col-12 col-md-6">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a href="#list-contactar" id="contactarTrigger" class="list-group-item list-group-item-action active"
+            data-bs-toggle="list" aria-controls="list-contactar" role="tab">Contactar</a>
+          <a href="#list-suxerencia" id="suxerenciasTrigger" class="list-group-item list-group-item-action"
+            data-bs-toggle="list" role="tab" aria-controls="list-suxerencia">Suxerencia</a>
+          <a href="#list-empresas" id="empresasTrigger" class="list-group-item list-group-item-action"
+            data-bs-toggle="list" role="tab" aria-controls="list-empresas">Empresas</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="tab-content" id="nav-tabContent">
+
+
+          <div class="tab-pane fade show active" id="list-contactar" role="tabpanel" aria-labelledby="contactarTrigger">
+            <label for="correo" class="form-label">Email:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Introduce o teu correo" id="correo" />
+            </div>
+            <label for="problema" class="form-label">O teu problema:</label>
+            <div class="input-group">
+              <textarea class="form-control" id="problema" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade show " id="list-suxerencia" role="tabpanel" aria-labelledby="suxerenciasTrigger">
+            <label for="correo" class="form-label">Email:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Introduce o teu correo" id="correo" />
+            </div>
+            <label for="problema" class="form-label">A túa suxerencia:</label>
+            <div class="input-group">
+              <textarea class="form-control" id="problema" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade show " id="list-empresas" role="tabpanel" aria-labelledby="empresasTrigger">
+            <label for="nomeEmpresa" class="form-label">Nome da empresa:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Introduce o nome da empresa" id="nomeEmpresa" />
+            </div>
+            <label for="correo" class="form-label">Email:</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Correo electrónico de contacto" id="correo" />
+            </div>
+
+            <label for="problema" class="form-label">En qué podemos axudarte?:</label>
+            <div class="input-group">
+              <textarea class="form-control" id="problema" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+  </main>
+
+
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    Aviso de Cookies: ¿Enterácheste?
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <footer class="bg-dark footer p-4  d-flex justify-content-center align-items-center">
+    <p class="text-white text-center p-0 m-0">
+      @IES San Clemente.net Todos os dereitos reservados
+    </p>
+  </footer>
+</body>
+<script defer>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+
 </html>

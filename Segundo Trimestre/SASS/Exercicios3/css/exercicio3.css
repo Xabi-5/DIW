@@ -1,0 +1,94 @@
+.btn-error {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 4px;
+  background-color: #dc3545;
+}
+
+.btn-warning {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 4px;
+  background-color: yellow;
+}
+
+.btn-accepted {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 4px;
+  background-color: #198754;
+}
+
+.btn-normal {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 4px;
+  background-color: #297af5;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+table th {
+  padding: 10px;
+  border: 1px solid black;
+}
+table tr td:nth-of-type(even) {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: lightgray;
+}
+table tr td:nth-of-type(odd) {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: grey;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.row .col-1 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 1;
+}
+.row .col-2 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 2;
+}
+.row .col-3 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 3;
+}
+.row .col-4 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 4;
+}
+.row .col-5 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 5;
+}
+.row .col-6 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 6;
+}
+.row .col-7 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 7;
+}
+.row .col-8 {
+  border: 1px solid black;
+  height: 100px;
+  grid-column: span 8;
+}
+
+/*# sourceMappingURL=exercicio3.css.map */

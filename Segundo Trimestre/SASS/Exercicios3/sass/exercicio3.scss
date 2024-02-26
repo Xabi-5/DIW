@@ -1,0 +1,46 @@
+@import 'variables';
+
+@each $class, $value in $buttons {
+  .btn-#{$class} {
+    display: inline-block;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: $value;
+  }
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+
+  th {
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  tr {
+    td:nth-of-type(even) {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: lightgray;
+    }
+
+    td:nth-of-type(odd) {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: grey;
+    }
+  }
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  @for $i from 1 through 8 {
+    .col-#{$i} {
+      border: 1px solid black;
+      height: 100px;
+      grid-column: span $i;
+    }
+  }
+}
